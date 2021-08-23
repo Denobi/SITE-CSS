@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+.body-slider{
+	margin:0px;
+	padding:0px;
+}
+.slider-ul{
+	list-style:none;
+}
+.item-a{
+	text-decoration:none;
+}
+.container-slider{
+	width:100%;
+	height: 100vh;
+	background-color:#f3f3f3;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.box-slider{
+	width:340px;
+	height:600px;
+	background-color:#191919;
+	border-radius: 10px;
+	box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin: 20px 10px;
+}
+.inova-model{
+	height: 69%;
+	max-height: 100%;
+	max-width: 100%;
+}
+.details-slider{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+}
+.details-slider p{
+	font-family: calibri;
+	font-weight: 500;
+	color:#f3f3f3;
+	text-align: center;
+	margin-top: 20px;
+}
+.inova-slider{
+	color:#abb091;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: calibri;
+	font-size: 25px;
+}
+.body-slider:checked{
+	color: blueviolet;
+	background-color: cadetblue;
+	transform: scale(2.02);
+}
+.box-slider:hover{
+	background-color: #17171d;
+	transform-style: preserve-3d;
+	transform: scale(1.02);
+	transition: all ease 0.3s;
+}
+.box-slider:hover .inova-slider{
+	color:#f3f3f3;
+	transition: all ease 0.5s;
+}
+/*--responsive for mobile phone--*/
+@media(max-width:720px){
+	.box-slider{
+		width: 94%;
+		height: 500px;
+	}
+	.inova-slider{
+		height:250px;
+	}
+	.details-slider p{
+		font-size: 16px;
+		width: 250px;
+	}
+	
+}
+.services-text-slider p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #191919;
+    font-size: 30px;
+    line-height: 0px;
+	letter-spacing: 5px;
+
+}
+.services-text-slider p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    color: #191919;
+    font-size: 15px;
+    line-height: 5px;
+	letter-spacing: 5px;
+	/* word-break: normal;
+	width: 100px; */
+	white-space: pre;
+}
+.services-text-slider p:nth-child(3){
+    font-family: calibri;
+    color: #7e7a7a;
+}
+.services-text-slider{
+    width: 500px;
+    margin: 50px 0px;
+	padding: 12px;
+}
